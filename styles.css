@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: auto;
+}
+nav{
+    position: fixed;
+    background-color: yellow;
+    width: 100vw;
+}
+nav .mobile-nav {
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    overflow-x: hidden;
+    height: 0vh;
+    overflow-y:hidden;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+.mobile-nav ul{
+    position: absolute;
+    right: 0px;
+    top: 0px;    
+    height: 100vw;
+    display: none;
+    background-color: rgb(48, 48, 48);;
+    flex-direction: column;
+    width: 0vw;
+    white-space: nowrap;
+    transition: width ease-in-out 1s;
+
+    text-wrap: none;
+    margin-left: auto;
+}
+#smallNav{
+    display: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul a:first-child{
+    margin-right: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav a svg{
+    padding-right: 5px;
+}
+nav a {
+    text-decoration: none;
+    background-color: rgb(48, 48, 48);
+    color: whitesmoke;
+    float: right;
+    padding: 10px 15px;
+}
+nav a:hover{
+    background-color: rgb(97, 97, 97)
+}
+@media only screen and (max-width: 650px) {
+    nav>ul>a:nth-last-child(-n + 4){
+        display: none;
+    }    
+    #smallNav{
+        display: block;
+    }
+    .mobile-nav ul{
+        display: flex;
+    }
+}
