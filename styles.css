@@ -4,7 +4,7 @@ body{
 }
 nav{
     position: fixed;
-    background-color: yellow;
+    background-color: rgb(48, 48, 48);
     width: 100vw;
 }
 nav .mobile-nav {
@@ -53,7 +53,7 @@ nav a {
     background-color: rgb(48, 48, 48);
     color: whitesmoke;
     float: right;
-    padding: 10px 15px;
+    padding: 15px 15px;
 }
 nav a:hover{
     background-color: rgb(97, 97, 97)
@@ -68,4 +68,33 @@ nav a:hover{
     .mobile-nav ul{
         display: flex;
     }
+}
+
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+    background-color: #252525;
+    /* background: rgb(221,153,12); */
+    /* background: linear-gradient(122deg, rgba(221,153,12,1) 0%, rgba(252,17,17,1) 81%);  */
+    height: 300px;
+    width: 100vw;
+    margin: auto;
+    box-shadow: 5px 10px 10px grey;
+}
+
+#fullName {
+    padding: 50px 0px;
+    margin: auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(58, 204, 0);
+    max-width: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+#fullName h2{
+    margin-top: 0px;
 }
