@@ -5,8 +5,9 @@ body{
 nav{
     position: fixed;
     background-color: rgb(48, 48, 48);
-    width: 100vw;
+    width: 100%;
     z-index: 999;
+    margin-right: 0px;
 }
 nav .mobile-nav {
     margin: 0px;
@@ -42,7 +43,7 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-nav ul a:first-child{
+nav>ul > li:first-child{
     margin-right: auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -58,11 +59,21 @@ nav a {
     float: right;
     padding: 15px 15px;
 }
+nav li:hover{
+    background-color: rgb(97, 97, 97)
+}
 nav a:hover{
     background-color: rgb(97, 97, 97)
 }
 @media only screen and (max-width: 680px) {
-    nav>ul>a:nth-last-child(-n + 4){
+    .mobile-nav{
+        width: 100%;
+    }
+    #mobileNav a {
+        float: left;
+        width: 100%;
+    }
+    nav>ul>li:nth-last-child(-n + 4){
         display: none;
     }    
     #smallNav{
@@ -70,7 +81,14 @@ nav a:hover{
     }
     .mobile-nav ul{
         display: flex;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
+    #mobileNav{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
@@ -81,11 +99,12 @@ nav a:hover{
     z-index: 1;
     align-items: center;
     padding-top: 42px;
+    margin-right: 0px;
     background-color: #252525;
     /* background: rgb(221,153,12); */
     /* background: linear-gradient(122deg, rgba(221,153,12,1) 0%, rgba(252,17,17,1) 81%);  */
     height: 300px;
-    width: 100vw;
+    width: 100%;
     margin: auto;
     box-shadow: 5px 10px 10px grey;
 }
@@ -107,7 +126,7 @@ nav a:hover{
 
 
 .career-paths {
-    padding: 50px 20px;
+    padding: 50px 0px;
     background-color: rgba(0, 0, 0, 0.164);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -150,6 +169,10 @@ nav a:hover{
 @media only screen and (max-width: 900px) {
     .career-item {
         width: 100%; /* 2 items per row on medium screens */
+        
+    }
+    .career-paths{
+        padding: 20px;
     }
 }
 

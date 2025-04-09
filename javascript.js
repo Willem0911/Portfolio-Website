@@ -1,6 +1,6 @@
 function showMobileNav() {
     let mobileNav = document.getElementById("mobileNav");
-    mobileNav.style.width = "100vw";
+    mobileNav.style.width = "100%";
     
 }
 function hideMobileNav() {
