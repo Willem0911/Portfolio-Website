@@ -18,7 +18,6 @@ const myFunction = (i) => {
     setTimeout(() => {
         endText += fullText[i];
         text.innerHTML = endText + "|";
-        console.log({i});
         i++;
 
         if (i < lenText){
@@ -32,4 +31,3 @@ const myFunction = (i) => {
     },75);
 };
 myFunction(i);
-console.log(text);
