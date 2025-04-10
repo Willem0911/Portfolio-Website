@@ -49,9 +49,6 @@ nav>ul > li:first-child{
     font-weight: bold;
     font-size: larger
 }
-nav a svg{
-    padding-right: 10px;
-}
 nav a {
     text-decoration: none;
     background-color: rgb(48, 48, 48);
@@ -73,9 +70,6 @@ nav a:hover{
         float: left;
         width: 100%;
         font-size: 1.5em;
-    }
-    #mobileNav a svg {
-        padding-right: 20px;
     }
     nav>ul>li:nth-last-child(-n + 4){
         display: none;
