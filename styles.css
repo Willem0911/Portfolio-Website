@@ -43,18 +43,29 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-nav>ul > li:first-child{
+nav>ul>li:first-child{
     margin-right: auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: larger
+    font-size: 1.3rem;
+
+}
+nav a svg{
+    padding-right: 10px;
 }
 nav a {
     text-decoration: none;
     background-color: rgb(48, 48, 48);
     color: whitesmoke;
+    font-size: 1.2rem;
     float: right;
     padding: 15px 15px;
+    height:30px;
+}
+nav ul li a {
+    display:flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 nav li:hover{
     background-color: rgb(97, 97, 97)
@@ -62,7 +73,12 @@ nav li:hover{
 nav a:hover{
     background-color: rgb(97, 97, 97)
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 750px) {
+    nav ul li a {
+        display:flex; 
+        justify-content: flex-start; 
+        align-items: center; 
+    }
     .mobile-nav{
         width: 100%;
     }
@@ -70,6 +86,9 @@ nav a:hover{
         float: left;
         width: 100%;
         font-size: 1.5em;
+    }
+    #mobileNav a svg {
+        padding-right: 20px;
     }
     nav>ul>li:nth-last-child(-n + 4){
         display: none;
