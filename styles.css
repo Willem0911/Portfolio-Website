@@ -50,7 +50,7 @@ nav>ul > li:first-child{
     font-size: larger
 }
 nav a svg{
-    padding-right: 5px;
+    padding-right: 10px;
 }
 nav a {
     text-decoration: none;
@@ -72,6 +72,10 @@ nav a:hover{
     #mobileNav a {
         float: left;
         width: 100%;
+        font-size: 1.5em;
+    }
+    #mobileNav a svg {
+        padding-right: 20px;
     }
     nav>ul>li:nth-last-child(-n + 4){
         display: none;
@@ -201,7 +205,7 @@ footer {
 }
 footer a {
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 0px 15px;
     color: whitesmoke;
     font-size: 40px;
 }
@@ -209,7 +213,10 @@ footer a {
 
 .tooltip {
     position: relative;
-    display: inline-block;  }
+    display: inline-block;  
+    padding: 7px;
+    padding-top: 10px;
+}
 
 .tooltip .tooltiptext {
     visibility: hidden;
